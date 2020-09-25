@@ -1,0 +1,64 @@
+
+  .tu {
+    border: solid black 3px;
+    padding: 5px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 40px;
+    color: red;
+    margin: 30px
+  }
+  button{
+    margin: 20px;
+    color: red;
+    background:rgb(119, 113, 113);
+    font-size: 20px;
+   
+  }
+  .uno{
+    
+    text-align:left;
+    
+  }
+  .dos{
+    
+    position:fixed;
+    left: 60%;
+  }
+  
+  .tres{
+  
+    position:fixed;
+    bottom:100px; 
+  }
+  
+  .mm{
+    margin-top: 3px;
+    margin: -5px
+  }
+
+  .ti {
+    text-align: center;
+  }
+  table {
+    text-align: center;
+    border: solid black;
+  }
+  body {
+    text-align: center;
+  }
+  .un {
+    color: red;
+    font-size: 25px;
+  }
+  td {
+    font-size: 18px;
+  }
+  h1 {
+    text-align: center;
+    color: red;
+  }
