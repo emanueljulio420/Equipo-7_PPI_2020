@@ -8,7 +8,6 @@ function Comenzar() {
   return (
     <div className="Comenzar">
       <Header />
-      <h1>hola</h1>
       <Ingresar />
       <Icono/>
     </div>
