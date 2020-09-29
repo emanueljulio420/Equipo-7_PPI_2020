@@ -33,7 +33,7 @@ library.add(fab , faUserCircle, faLock);
 
 ReactDOM.render(
   <>
-  <DiesUno/>
+  <Niveluno/>
   </>,
   document.getElementById('root')
 );

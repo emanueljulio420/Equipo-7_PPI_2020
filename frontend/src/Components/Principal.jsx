@@ -1,4 +1,6 @@
 import React from 'react';
+import p from '../Img/p.png'
+import Sin from '../Img/Sin título.png'
 
 function Principal() {
     return (
@@ -7,10 +9,10 @@ function Principal() {
             <br />
             <br />
             <br />
-            <img src="Sin título.png" alt="..." width="411" height="411"></img>
+            <img src={Sin} alt="..." width="411" height="411"></img>
             <br />
             <br />
-            <img src="p.png" alt="..." width="411" height="71"></img>
+            <img src={p} alt="..." width="411" height="71"></img>
             <br />
             <br />
             <br />

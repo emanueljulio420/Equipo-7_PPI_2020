@@ -1,13 +1,13 @@
 import React from 'react';
 import Icono from '../Components/Icono';
-import HeaderEstudiante from '../Components/HeaderEstudiante';
 import TablaUno from '../Components/TablaUno';
+import HeaderDocente from '../Components/HeaderDocente';
 
 
 function DiesUno() {
   return (
     <div className="DiesUno">
-      <HeaderEstudiante />
+      <HeaderDocente />
       <br/>
       <TablaUno />
       <br/>

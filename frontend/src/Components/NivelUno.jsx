@@ -1,4 +1,5 @@
 import React from 'react';
+import Aja from '../Img/aja.png';
 
 function Niveluno() {
 
@@ -7,7 +8,7 @@ function Niveluno() {
         <body className="text-center">
             <div className="App">
                 <br/>
-            <img src="aja.png" alt="..." width="411" height="700"></img>
+            <img src={Aja} alt="..." width="411" height="700"></img>
                 <br/>
                 <h4 className="text-danger my-2">Opciones de respuesta</h4>
                 <button type="button" className="btn btn-danger text-center mx-2 my-3">A ) 12m</button>
