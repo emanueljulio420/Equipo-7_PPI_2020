@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import el from '../Img/el.png';
 
 function Header() {
@@ -13,14 +14,16 @@ function Header() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto text">
                     <li className="nav-item active">
-                        <a className="navbar-brand text-black" href="#">¿Como jugar?</a>
+                        <a className="navbar-brand text-black">¿Como jugar?</a>
                     </li>
                     <li className="nav-item active">
-                        <a className="navbar-brand text-black" href="#">Iniciar sesion</a>
+                        <Link to="peluda" className="navbar-brand text-black">Iniciar sesion</Link>
                     </li>
                 </ul>
                 <form className="form-inline my-2 my-lg-0 text-center">
+                <Link to="monda">
                     <button className="btn btn-outline-danger my-2 my-sm-0 mx-3 col-10" type="submit">Registrarme</button>
+                </Link>
                 </form>
             </div>
         </nav> 

@@ -1,13 +1,13 @@
 import React from 'react';
+import el from '../Img/el.png';
 
 function Eleccion() {
     return (
 
         <div className="bg-white col-md-8 order-md-1 container my-5 text-center">
+            <img src={el} alt="" width="400" height="400" />
             <br/>
-            <img className="mb-4" src="el.png" alt="" width="300" height="300" />
-            <br/>
-            <h4 className="mb-3 text-center">Registro</h4>
+            <h4 className="mb-3 text-center text-danger">Registro</h4>
             <br/>
             <form className="needs-validation" novalidate="">
                 <div className="row">

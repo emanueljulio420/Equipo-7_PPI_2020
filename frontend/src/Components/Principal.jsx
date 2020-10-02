@@ -5,7 +5,7 @@ import Sin from '../Img/Sin título.png'
 function Principal() {
     return (
 
-        <div className="">
+        <div className="text-center">
             <br />
             <br />
             <br />

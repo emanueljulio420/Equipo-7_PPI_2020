@@ -11,10 +11,6 @@ function DiesUno() {
       <br/>
       <TablaUno />
       <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
       <Icono/>
     </div>
   );
