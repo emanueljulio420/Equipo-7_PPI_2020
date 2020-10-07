@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import el from '../Img/el.png';
 
 function Eleccion() {
@@ -12,11 +13,12 @@ function Eleccion() {
             <form className="needs-validation" novalidate="">
                 <div className="row">
                     <div className="col-md-6 mb-3">
-                        <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Estudiante</font></button>
+                        
+                      <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Estudiante</font></button>
                     </div>
                     <br/>
                     <div className="col-md-6 mb-3">
-                        <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Docente</font></button>
+                    <Link to ="res"><button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Docente</font></button></Link>
                     </div>
                     <br/>
                 </div>
