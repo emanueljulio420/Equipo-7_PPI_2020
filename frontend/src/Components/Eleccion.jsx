@@ -14,11 +14,12 @@ function Eleccion() {
                 <div className="row">
                     <div className="col-md-6 mb-3">
                         
-                      <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Estudiante</font></button>
+                    <Link to ="yes">  <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Estudiante</font></button></Link>
                     </div>
                     <br/>
                     <div className="col-md-6 mb-3">
                     <Link to ="res"><button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Docente</font></button></Link>
+                   
                     </div>
                     <br/>
                 </div>
@@ -28,4 +29,4 @@ function Eleccion() {
     );
 }
 
-export default Eleccion;
+export default Eleccion; 
