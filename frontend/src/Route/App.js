@@ -27,6 +27,8 @@ const App = () => {
                 <Route path="/como" component={ComoJugar} />
                 <Route path="/res" component={FormularioDocente} />
                 <Route path="/yes" component={FormularioEstudiante} />
+                <Route path="/hola" component={EjemploConver} />
+                
 
              
             </Switch>

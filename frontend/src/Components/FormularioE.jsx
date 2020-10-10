@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FormularioEstuciante() {
     return (
@@ -69,7 +70,7 @@ function FormularioEstuciante() {
                     </div>
                 </div>
                 <hr className="mb-4"></hr>
-                <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button>
+                <Link to="hola"><button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button></Link>
             </form>
         </div>
 

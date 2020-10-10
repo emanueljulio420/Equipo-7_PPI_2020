@@ -79,4 +79,4 @@ function EjemploUno() {
     );
 
 }
-export default EjemploUno
+export default EjemploUno;
