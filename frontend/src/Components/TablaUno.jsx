@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function TablaUno() {
   return (
@@ -52,6 +53,16 @@ function TablaUno() {
           <td className="ti"> 3 min </td>
         </tr>
       </table>
+      <div className="bg-white col-md-8 order-md-1 container my-5">
+        <div className="row">
+          <div className="col-md-6 mb-3 text-center">
+            <br />
+            <Link to="docente">
+            <button className="btn btn-block my-2 mx-1 btn-danger">   VOLVER   </button>
+            </Link>
+            </div>
+            </div>
+        </div>
       </div>
     </body>
 

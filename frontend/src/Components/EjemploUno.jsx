@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css'
 
 function EjemploUno() {
@@ -7,7 +8,7 @@ function EjemploUno() {
             <h1 className="my-3 text-danger text-center"> EJEMPLO </h1>
             <br />
             <br />
-            <table class="table tu text-center col-md-8 center">
+            <table class="table tu text-center center">
                 <tr>
                     <th className="my-3 text-danger text-center">Unidad</th>
                     <br/>
@@ -76,7 +77,15 @@ function EjemploUno() {
             <p className="text-center"><strong>km</strong> se cancela con <strong>km</strong> y queda en <strong>m</strong> la repuesta final</p>
             <br />
             
-
+            <div className="bg-white col-md-8 order-md-1 container my-5">
+            <form className="needs-validation" novalidate="">
+                <div className="aling-item-center">
+                        <Link to="conver">
+                        <button className="btn btn-block my-2 mx-1 col-md-6 btn-danger">   VOLVER   </button>
+                        </Link>
+                </div>
+            </form>
+        </div>
         </div>
     );
 

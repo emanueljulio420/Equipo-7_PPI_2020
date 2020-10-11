@@ -64,13 +64,15 @@ function FormularioEstuciante() {
                             <option> 10-2 </option>
                             <option> 10-3 </option>
                             <option> 10-4 </option>
-                            <option> 10-5 </option> 
+                            <option> 10-5 </option>
                         </select>
                         <div className="invalid-feedback">Please select a valid country.</div>
                     </div>
                 </div>
                 <hr className="mb-4"></hr>
-                <Link to="hola"><button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button></Link>
+                <Link to="holae">
+                    <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button>
+                </Link>
             </form>
         </div>
 

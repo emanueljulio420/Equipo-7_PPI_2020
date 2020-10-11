@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css'
 
 function CosaDocente(params) {
@@ -13,7 +14,9 @@ function CosaDocente(params) {
         <div className="row">
           <div className="col-md-6 mb-3 text-center">
             <br />
+            <Link to="grupo">
             <button className="btn btn-block my-2 mx-1 btn-danger">   10-1   </button>
+            </Link>
             <br />
             <button className="btn btn-block my-2 mx-1 btn-danger">   10-2   </button>
             <br />

@@ -17,7 +17,7 @@ library.add(fab , faUserCircle, faLock, faLockOpen);
 
 ReactDOM.render(
   <>
-  <App />
+  <App/>
   </>,
   document.getElementById('root')
 );

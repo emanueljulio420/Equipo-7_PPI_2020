@@ -3,9 +3,9 @@ import CosaDocente from '../Components/CosaDocente';
 import HeaderDocente from '../Components/HeaderDocente';
 import Icono from '../Components/Icono';
 
-function FormularioDocente() {
+function Docente() {
   return (
-    <div className= "FormularioDocente">
+    <div className= "Docente">
         <HeaderDocente/>
         <CosaDocente />      
         <Icono/>
@@ -13,4 +13,4 @@ function FormularioDocente() {
   );
 }
 
-export default FormularioDocente;
+export default Docente;

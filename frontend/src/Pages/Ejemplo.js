@@ -3,11 +3,11 @@ import HeaderEstudiante from '../Components/HeaderEstudiante'
 import EjemploUno from '../Components/EjemploUno';
 import Icono from '../Components/Icono';
 
-function EjemploConver() {
+function Ejemplo() {
 
     return (
 
-        <div className="EjemploConver">
+        <div className="Ejemplo">
             <HeaderEstudiante/>
             <EjemploUno />
             <Icono/>
@@ -17,4 +17,4 @@ function EjemploConver() {
 
 }
 
-export default EjemploConver;
+export default Ejemplo;

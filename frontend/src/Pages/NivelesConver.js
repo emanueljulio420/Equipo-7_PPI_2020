@@ -4,9 +4,9 @@ import HeaderEstudiante from '../Components/HeaderEstudiante';
 import NivelesUno from '../Components/Conversiones';
 
 
-function Comenzar() {
+function NivelesConver() {
   return (
-    <div className="Comenzar">
+    <div className="NivelesConver">
       <HeaderEstudiante />
       <NivelesUno />
       <Icono/>
@@ -14,4 +14,4 @@ function Comenzar() {
   );
 }
 
-export default Comenzar;
+export default NivelesConver;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FormularioD() {
     return (
@@ -49,7 +50,9 @@ function FormularioD() {
                     </div>
                 </div>
                 <hr className="mb-4"></hr>
-                <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button>
+            <Link to="holad">
+            <button className="btn btn-outline-danger btn-lg btn-block" type="submit"><font style={{ marginRight: 'vertical-align: inherit;' }}>Registrarme</font></button>     
+            </Link>    
             </form>
         </div>
 
