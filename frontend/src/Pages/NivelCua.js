@@ -1,17 +1,17 @@
 import React from 'react';
 import Icono from '../Components/Icono';
 import HeaderEstudiante from '../Components/HeaderEstudiante';
-import NivelDos from '../Components/NivelDos';
+import NivelCua from '../Components/NivelCua';
 
 
-function NivelDoss() {
+function NivelCuaa () {
   return (
-    <div className="NivelDos">
+    <div className="NivelCuaa">
       <HeaderEstudiante />
-      <NivelDos />
-      <Icono/>
+      <NivelCua/>
+      <Icono />
     </div>
   );
 }
 
-export default NivelDoss;
+export default NivelCuaa;

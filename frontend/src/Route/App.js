@@ -10,13 +10,15 @@ import ComoJugarE from '../Pages/ComoJugarE';
 import NivelesConver from '../Pages/NivelesConver';
 import Ejemplo from '../Pages/Ejemplo';
 import Docente from '../Pages/Docente'
-import Niveluno from '../Pages/NivelUno';
+import Nivelunoo from '../Pages/NivelUno';
 import FormularioEstudiante from '../Pages/FormularioEstudiante';
 import Modulo from '../Pages/Modulo'
 import DiesUno from '../Pages/DiesUno';
-import NivelDos  from '../Pages/NivelDos';
+import NivelDoss  from '../Pages/NivelDos';
 import InicioD from '../Pages/InicioD';
 import InicioE from '../Pages/InicioE';
+import NivelTress from '../Pages/NivelTres';
+import NivelCuaa from '../Pages/NivelCua';
 
 const App = () => {
 
@@ -33,14 +35,17 @@ const App = () => {
                 <Route path="/yes" component={FormularioEstudiante} />
                 <Route path="/holae" component={InicioE} />
                 <Route path="/holad" component={InicioD} />
-                <Route path="/dos" component={NivelDos} />
+                <Route path="/dos" component={NivelDoss} />
                 <Route path="/grupo" component={DiesUno} />
                 <Route path="/conver" component={NivelesConver} />
                 <Route path="/f" component={Modulo} />
                 <Route path="/eje" component={Ejemplo} />
                 <Route path="/f" component={Modulo} />
-                <Route path="/uno" component={Niveluno} />
+                <Route path="/uno" component={Nivelunoo} />
                 <Route path="/docente" component={Docente} />
+                <Route path="/tres" component={NivelTress} />
+                <Route path="/cua" component={NivelCuaa} />
+               
         
       
     

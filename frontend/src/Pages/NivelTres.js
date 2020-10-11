@@ -1,17 +1,17 @@
 import React from 'react';
 import Icono from '../Components/Icono';
 import HeaderEstudiante from '../Components/HeaderEstudiante';
-import NivelDos from '../Components/NivelDos';
+import NivelTres from '../Components/NivelTres';
 
 
-function NivelDoss() {
+function NivelTress() {
   return (
-    <div className="NivelDos">
+    <div className="NivelTres">
       <HeaderEstudiante />
-      <NivelDos />
-      <Icono/>
+      <NivelTres/>
+      <Icono />
     </div>
   );
 }
 
-export default NivelDoss;
+export default NivelTress;
