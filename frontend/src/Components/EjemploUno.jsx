@@ -75,6 +75,8 @@ function EjemploUno() {
             <p className="text-center">5km=1000m/1km=5000m</p>
             <p className="text-center"><strong>km</strong> se cancela con <strong>km</strong> y queda en <strong>m</strong> la repuesta final</p>
             <br />
+            
+
         </div>
     );
 

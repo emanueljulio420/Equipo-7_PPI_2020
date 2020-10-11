@@ -14,6 +14,7 @@ import Niveluno from '../Pages/NivelUno';
 import FormularioEstudiante from '../Pages/FormularioEstudiante';
 import Modulo from '../Pages/Modulo'
 import DiesUno from '../Pages/DiesUno';
+import NivelDos  from '../Pages/NivelDos';
 
 const App = () => {
 
@@ -28,6 +29,8 @@ const App = () => {
                 <Route path="/res" component={FormularioDocente} />
                 <Route path="/yes" component={FormularioEstudiante} />
                 <Route path="/hola" component={EjemploConver} />
+                <Route path="/asi" component={NivelDos} />
+                
                 
 
              
