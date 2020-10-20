@@ -10,7 +10,7 @@ import ComoJugarE from '../Pages/ComoJugarE';
 import NivelesConver from '../Pages/NivelesConver';
 import Ejemplo from '../Pages/Ejemplo';
 import Docente from '../Pages/Docente'
-import Nivelunoo from '../Pages/NivelUno';
+import NivelUnoo from '../Pages/NivelUno';
 import FormularioEstudiante from '../Pages/FormularioEstudiante';
 import Modulo from '../Pages/Modulo'
 import DiesUno from '../Pages/DiesUno';
@@ -41,7 +41,7 @@ const App = () => {
                 <Route path="/f" component={Modulo} />
                 <Route path="/eje" component={Ejemplo} />
                 <Route path="/f" component={Modulo} />
-                <Route path="/uno" component={Nivelunoo} />
+                <Route path="/uno" component={NivelUnoo} />
                 <Route path="/docente" component={Docente} />
                 <Route path="/tres" component={NivelTress} />
                 <Route path="/cua" component={NivelCuaa} />
