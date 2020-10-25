@@ -11,7 +11,7 @@ function Resultado() {
              <h1>Resultado del Nivel 1 </h1>
              <p> has sacado 3/4 respuestas buenas, tienes un promedio bueno </p>
              <br></br>
-             <button type="button" className="btn btn-danger text-center mx-2 my-3">continuar </button>
+             <Link to="niveseg"><button type="button" className="btn btn-danger text-center mx-2 my-3">continuar </button></Link>
             <br></br>
             <br></br>
             <br></br>
