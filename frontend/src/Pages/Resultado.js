@@ -1,17 +1,16 @@
 import React from 'react';
 import Icono from '../Components/Icono';
 import HeaderEstudiante from '../Components/HeaderEstudiante';
-//import resultados from '../Components/resultados';
+import Resultado from '../Components/Resultado';
 
-
-function resultadoss () {
+function resultados () {
   return (
-    <div className="resultadoss">
+    <div className="resultados">
       <HeaderEstudiante />
-      
+      <Resultado/>
       <Icono />
     </div>
   );
 }
 
-export default resultadoss;
+export default resultados;

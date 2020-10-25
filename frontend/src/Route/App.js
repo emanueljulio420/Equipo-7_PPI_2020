@@ -19,7 +19,9 @@ import InicioD from '../Pages/InicioD';
 import InicioE from '../Pages/InicioE';
 import NivelTress from '../Pages/NivelTres';
 import NivelCuaa from '../Pages/NivelCua';
-import resultados from '../Components/resultados';
+import Resultado from '../Components/Resultado';
+import resultados from '../Pages/Resultado';
+
 
 const App = () => {
 
@@ -47,6 +49,8 @@ const App = () => {
                 <Route path="/tres" component={NivelTress} />
                 <Route path="/cua" component={NivelCuaa} />
                 <Route path="/resu" component={resultados} />
+
+             
         
       
     
