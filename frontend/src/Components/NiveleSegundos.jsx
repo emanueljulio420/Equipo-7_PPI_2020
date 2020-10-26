@@ -13,14 +13,14 @@ function NiveleSegundos() {
             <form className="needs-validation" novalidate="">
                 <div className="center">
                     <div className="col-md-6 text-center">
-                        <Link to="eje">
+                        <Link to="nose">
                         <button className="btn btn-block my-2 mx-1 btn-danger">   EJEMPLO   </button>
                         </Link>
                         <div class="dropdown-divider"></div>
-                        <Link to="uno">
+                        <Link to="resu">
                         <button className="btn  my-2 mx-2 btn-danger">Nivel 1 <FontAwesomeIcon icon={faLockOpen} size="lg mx-1" className="aligned-right" /></button>
                         </Link>
-                        <Link >
+                        <Link to="cinco">
                         <button className="btn  my-2 mx-2 btn-danger">Nivel 2 <FontAwesomeIcon icon={faLockOpen} size="lg mx-1" className="aligned-right" /></button>
                         </Link>
                         <Link>
