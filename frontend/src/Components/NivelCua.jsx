@@ -14,9 +14,9 @@ function NivelUno() {
                 <br/>
                 <h4 className="text-danger my-2">Opciones de respuesta</h4>
               <Link to="resu" > <button type="button" className="btn btn-danger text-center mx-2 my-3">A ) 160 pies </button></Link> 
-                <button type="button" className="btn btn-danger text-center mx-2 my-3">B ) 200 pies </button>
-                <button type="button" className="btn btn-danger text-center mx-2 my-3">C ) 0.50 pies  </button>
-                <button type="button" className="btn btn-danger text-center mx-2 my-3">D ) 164.042 pies </button>
+              <Link to="resu" ><button type="button" className="btn btn-danger text-center mx-2 my-3">B ) 200 pies </button></Link> 
+              <Link to="resu" ><button type="button" className="btn btn-danger text-center mx-2 my-3">C ) 0.50 pies  </button></Link> 
+              <Link to="resu" > <button type="button" className="btn btn-danger text-center mx-2 my-3">D ) 164.042 pies </button></Link> 
             </div>
         </body>
     );

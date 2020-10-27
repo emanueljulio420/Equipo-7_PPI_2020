@@ -22,6 +22,11 @@ import NivelCuaa from '../Pages/NivelCua';
 import Resultado from '../Components/Resultado';
 import resultados from '../Pages/Resultado';
 import NiveleSegundo from '../Pages/NiveleSegundos';
+import NivelCincoo from '../Components/NivelCinco';
+import hola from '../Pages/NivelCinco';
+import gamin from '../Pages/NivelCinco';
+import guache from '../Pages/NivelSeis';
+import exm from '../Pages/EjemploDos';
 
 
 const App = () => {
@@ -51,6 +56,10 @@ const App = () => {
                 <Route path="/cua" component={NivelCuaa} />
                 <Route path="/resu" component={resultados} />
                 <Route path="/niveseg" component={NiveleSegundo} />
+                <Route path="/cinco" component={gamin} />
+                <Route path="/seis" component={guache} />
+                <Route path="/nose" component={exm} />
+                
 
              
         
