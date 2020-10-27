@@ -3,7 +3,7 @@ const mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'nueva',
+    database: 'el mundo de la fisica',
     multipleStatements: true
 });
 
@@ -12,7 +12,7 @@ mysqlConnection.connect( function(err){
         console.error(err);
         return;
     } else {
-        console.log('Base de datos está conectada!');
+        console.log('Base de datos esta conectada!');
     }
 })
 

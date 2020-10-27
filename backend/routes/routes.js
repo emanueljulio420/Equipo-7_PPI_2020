@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const router = Router();
-const mysqlCennection = require('../db/db')
+const mysqlConnection= require('../db/db')
 
 router.get('/estudiantes', (req, res)=>{
     mysqlConnection.query('SELECT * FROM estudiante', (err, rows, fields)=>{
