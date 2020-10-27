@@ -1,17 +1,14 @@
-'use strict';
 const express = require('express');
-const path = require('path');
-const morgan = require('morgan');
 const app = express();
+const routes = require('./routes/routes');
 
-app.use(morgan('dev'));
+app.set('port', 4001);
+
 app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.send('El mundo de la fisica');
-});
+//rutas
+app.use('/api',routes);
 
-app.set('port', 3000);
 app.listen(app.get('port'), () => {
-    console.log('se esta corriendo el mundo de la fisica en el server 3000');
+    console.log(`Server on port ${app.get('port')}`);
 });
