@@ -34,7 +34,7 @@ router.post('/nuevo-estudiante', (req, res)=>{
     const { grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo } = req.body;
     const { id } = req.params;
     mysqlConnection.query(`UPDATE actores SET grupo = ?, nombre = ?, apellido = ?, correo = ?, contraseña = ?, tiempo_en_el_juego = ?, codigo = ? WHERE id = ?`,
-     [ grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo ], (err, rows, fields)=>{
+     [ grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo, id ], (err, rows, fields)=>{
         if(!err) {
             res.json({status: 'Se han actualizado datos del estudiante'});
         }else {
