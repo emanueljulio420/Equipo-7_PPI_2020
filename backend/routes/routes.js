@@ -13,12 +13,12 @@ router.get('/estudiantes', (req, res)=>{
 });
 
 router.post('/nuevo-estudiante', (req, res)=>{
-    const {id, grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo } = req.body;
+    const { grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo } = req.body;
   
-    let alumno = [ id, grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo];
+    let alumno = [ grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo];
   
-    let nuevoAlumno = `INSERT INTO estudiante( id, grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo  ) 
-    VALUES( ?,?,?,?,?,?,?,?)`;
+    let nuevoAlumno = `INSERT INTO estudiante( grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo  ) 
+    VALUES( ?,?,?,?,?,?,?)`;
     
     mysqlConnection.query(nuevoAlumno, alumno, (err, results, fields)=>{
         if(err){
@@ -29,7 +29,20 @@ router.post('/nuevo-estudiante', (req, res)=>{
     });
   
   });
-  
+
+  router.put('/estudiante/:id', (req, res)=>{
+    const { grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo } = req.body;
+    const { id } = req.params;
+    mysqlConnection.query(`UPDATE actores SET grupo = ?, nombre = ?, apellido = ?, correo = ?, contraseña = ?, tiempo_en_el_juego = ?, codigo = ? WHERE id = ?`,
+     [ grupo, nombre, apellido, correo, contraseña, tiempo_en_el_juego, codigo ], (err, rows, fields)=>{
+        if(!err) {
+            res.json({status: 'Se han actualizado datos del estudiante'});
+        }else {
+            console.log(err);
+        }
+    });
+})
+
 module.exports = router;
 
 
