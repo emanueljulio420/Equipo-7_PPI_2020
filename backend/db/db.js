@@ -3,7 +3,7 @@ const mysqlConnection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: 'el mundo de la fisica',
+    database: 'el_mundo_de_la_fisica',
     multipleStatements: true
 });
 
