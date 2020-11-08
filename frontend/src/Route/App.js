@@ -27,6 +27,8 @@ import hola from '../Pages/NivelCinco';
 import gamin from '../Pages/NivelCinco';
 import guache from '../Pages/NivelSeis';
 import exm from '../Pages/EjemploDos';
+import jesus from '../Pages/Siete';
+import pepita from '../Pages/Ocho';
 
 
 const App = () => {
@@ -59,7 +61,8 @@ const App = () => {
                 <Route path="/cinco" component={gamin} />
                 <Route path="/seis" component={guache} />
                 <Route path="/nose" component={exm} />
-                
+                <Route path="/cristo" component={jesus} />
+                <Route path="/jj" component={pepita} />
 
              
         
