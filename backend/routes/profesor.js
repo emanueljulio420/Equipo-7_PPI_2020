@@ -14,12 +14,12 @@ router.get('/', (req, res)=>{
 });
 
 router.post('/nuevo-profesor', (req, res)=>{
-    const { cedula, nombre, edad, codigo, contraseña_docente} = req.body;
+    const { nombre, apellido, contraseña, colegio } = req.body;
   
-    let alumno = [ cedula, nombre, edad, codigo, contraseña_docente ];
+    let alumno = [nombre, apellido, contraseña, colegio ];
   
-    let nuevoAlumno = `INSERT INTO profesor( cedula, nombre, edad, codigo, contraseña_docente  ) 
-    VALUES( ?,?,?,?,?)`;
+    let nuevoAlumno = `INSERT INTO profesor( nombre, apellido, contraseña, colegio  ) 
+    VALUES( ?,?,?,?)`;
     
     mysqlConnection.query(nuevoAlumno, alumno, (err, results, fields)=>{
         if(err){
@@ -30,5 +30,19 @@ router.post('/nuevo-profesor', (req, res)=>{
     });
   
   });
+
+
+  router.put('/profesor/:id', (req, res)=>{
+    const { nombre, apellido, contraseña, colegio } = req.body;
+    const { id } = req.params;
+    mysqlConnection.query(`UPDATE actores SET nombre =? , apellido =? , contraseña =? , colegio =?  WHERE id = ?`,
+     [nombre, apellido, contraseña, colegio , id ], (err, rows, fields)=>{
+        if(!err) {
+            res.json({status: 'Se han actualizado datos del profesor'});
+        }else {
+            console.log(err);
+        }
+    });
+})
 
 module.exports = router;
