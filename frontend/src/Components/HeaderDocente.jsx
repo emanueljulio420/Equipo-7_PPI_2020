@@ -18,7 +18,7 @@ function HeaderDocente() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav mr-auto text">
                     <li className="nav-item active">
-                        <Link to="docente" className="navbar-brand text-black" href="#">Grupos</Link>
+                        <Link to="docente" className="navbar-brand text-black" href="#">Estudiantes</Link>
                     </li>
                     <li>
                         <a class="nav-link dropdown-toggle navbar-brand text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

@@ -9,22 +9,37 @@ function CosaDocente(params) {
 
 
     <div className="bg-white col-md-8 order-md-1 container my-5">
-      <h2 className="mb-3 text-center">Grupos registrados</h2>
+      <h2 className="mb-3 text-center">Alumnos  registrados</h2>
       <form className="needs-validation" novalidate="">
         <div className="row">
           <div className="col-md-6 mb-3 text-center">
             <br />
-            <Link to="grupo">
-            <button className="btn btn-block my-2 mx-1 btn-danger">   10-1   </button>
-            </Link>
-            <br />
-            <button className="btn btn-block my-2 mx-1 btn-danger">   10-2   </button>
-            <br />
-            <button className="btn btn-block my-2 mx-1 btn-danger">   10-3   </button>
-            <br />
-            <button className="btn btn-block my-2 mx-1 btn-danger">   10-4   </button>
-            <br />
-            <button className="btn btn-block my-2 mx-1 btn-danger">   10-5   </button>
+
+            <table className="tablita table" width="300px" border="1" cellspacing="0" cellpadding="0">
+              <tr>
+                <td className="un"> Nombre</td>
+                <td className="un"> Apellido </td>
+                <td className="un"> Contraseña </td>
+                <td className="un"> Colegio </td>
+                <td className="un"> Grado </td>
+                <td className="un"> id_docente</td>
+                <td className="un"> resultado </td>
+                <td className="un"> correo </td>
+              </tr>
+              <tr>
+                <td className="un"> </td>
+                <td className="un">  </td>
+                <td className="un"> </td>
+                <td className="un"> </td>
+                <td className="un">  </td>
+                <td className="un"> </td>
+                <td className="un">  </td>
+                <td className="un">  </td>
+              </tr>
+
+            </table>
+
+
           </div>
         </div>
       </form>
