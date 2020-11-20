@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const mysqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'el_mundo_de_la_fisica',
+    host: 'brvstqoa3kmfiwgrsajm-mysql.services.clever-cloud.com',
+    user: 'ukrrwr2jj9i3ezc0',
+    password: 'dHgpsn16OMvSnbofBiFS',
+    database: 'brvstqoa3kmfiwgrsajm',
     multipleStatements: true
 });
 
