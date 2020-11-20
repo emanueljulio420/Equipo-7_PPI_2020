@@ -4,19 +4,21 @@ import './styles.css'
 import axios from 'axios';
 
 class CosaDocente extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
       datos: []
-    }
+   
   }
+}
 
   componentDidMount() {
-    axios.get('http://localhost:4001/api/estudiantes')
+    axios.get(`http://localhost:4001/api/estudiantes`)
       .then(res => {
         console.log(res.data)
         this.setState({
-          datos: res.data.results
+          datos: res.data
         })
       }).catch(err => {
         console.log(err.message)
@@ -27,6 +29,7 @@ class CosaDocente extends React.Component {
   render() {
     console.log(this.state.datos);
     const characters = this.state.datos;
+    
     return (
 
 
@@ -47,17 +50,16 @@ class CosaDocente extends React.Component {
                   <td className="un"> resultado </td>
                   <td className="un"> correo </td>
                 </tr>
-                {
-                  characters.map((item) => {
+                {characters.map((estudiantes) => {
                     return (
                       <tr>
-                        <td className="un"> {item.id} </td>
-                        <td className="un"> {item.name} </td>
-                        <td className="un"> {item.apellido} </td>
-                        <td className="un"> {item.colegio} </td>
-                        <td className="un"> {item.grado}</td>
-                        <td className="un"> {item.resultado}</td>
-                        <td className="un"> {item.correo}</td>
+                        <td className="un"> {estudiantes.id} </td>
+                        <td className="un"> {estudiantes.nombre} </td>
+                        <td className="un"> {estudiantes.apellido} </td>
+                        <td className="un"> {estudiantes.colegio} </td>
+                        <td className="un"> {estudiantes.grado}</td>
+                        <td className="un"> {estudiantes.resultado}</td>
+                        <td className="un"> {estudiantes.correo}</td>
                       </tr>
                     )
                   })
