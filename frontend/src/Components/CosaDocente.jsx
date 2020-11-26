@@ -32,7 +32,7 @@ class CosaDocente extends React.Component {
     
     return (
 
-
+      <div className="text-center"> 
       <div className="cuerpo bg-white col-md-8 order-md-1 container my-5">
         <h2 className="mb-3 text-center">Alumnos  registrados</h2>
         <form className="needs-validation" novalidate="">
@@ -74,6 +74,7 @@ class CosaDocente extends React.Component {
         </form>
 
       </div>
+    </div>
     );
   }
 }

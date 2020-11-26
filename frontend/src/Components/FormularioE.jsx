@@ -1,7 +1,39 @@
 import React from 'react';
+import axios from "axios";
 import { Link } from 'react-router-dom';
 
-function FormularioEstuciante() {
+class FormularioEstuciante extends Component {
+    constructor(props){
+     //es el lugar donde me traigo a las props y donde inicializo el estado
+     //1 es ir al constructor
+     super(props)
+     this.state={
+       datos: [],
+     
+       form: {
+          id: '',
+          nombre: '',
+          pais: '',
+          capital: ''
+       },
+       tipoModal: ''
+     }
+   } 
+
+
+   peticionPost=async () =>{
+    delete this.state.form.id
+     await axios.post('http://localhost:4001/api/estudiantes', this.state.form)
+     .then(response =>{
+       this.modalInsertarForm();
+       this.peticionGet();
+     }).catch(error=>{
+      console.log(error.message);
+    })
+     
+   }
+
+function () {
     return (
 
         <div className="bg-white col-md-8 order-md-1 container my-5">

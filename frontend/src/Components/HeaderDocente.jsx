@@ -21,10 +21,10 @@ function HeaderDocente() {
                         <Link to="docente" className="navbar-brand text-black" href="#">Estudiantes</Link>
                     </li>
                     <li>
-                        <a class="nav-link dropdown-toggle navbar-brand text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <a className="nav-link dropdown-toggle navbar-brand text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             <FontAwesomeIcon icon={faUserCircle} size="lg" className=""/> Nombre de usuario</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <Link to="/" class="dropdown-item navbar-brand text-black" href="#">Cerrar sesion</Link>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <Link to="/" className="dropdown-item navbar-brand text-black" href="#">Cerrar sesion</Link>
                         </div>
                     </li>
                 </ul>
