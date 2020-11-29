@@ -16,7 +16,7 @@ function NivelesUno() {
                         <Link to="eje">
                         <button className="btn btn-block my-2 mx-1 btn-danger">   EJEMPLO   </button>
                         </Link>
-                        <div class="dropdown-divider"></div>
+                        <div className="dropdown-divider"></div>
                         <Link to="uno">
                         <button className="btn  my-2 mx-2 btn-danger">Nivel 1 <FontAwesomeIcon icon={faLockOpen} size="lg mx-1" className="aligned-right" /></button>
                         </Link>

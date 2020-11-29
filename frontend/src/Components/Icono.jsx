@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Icono() {
   return (
-    <div class="copyright bg-danger text-center">
+    <div className="copyright bg-danger text-center">
       <br/>
       <p>Todos los derechos reservados 2020-2021</p>
       <br/>

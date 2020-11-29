@@ -8,7 +8,7 @@ function EjemploUno() {
             <h1 className="my-3 text-danger text-center"> EJEMPLO </h1>
             <br />
             <br />
-            <table class="table tu text-center center">
+            <table className="table tu text-center center">
                 <tr>
                     <th className="my-3 text-danger text-center">Unidad</th>
                     <br/>

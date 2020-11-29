@@ -63,11 +63,6 @@ const App = () => {
                 <Route path="/nose" component={exm} />
                 <Route path="/cristo" component={jesus} />
                 <Route path="/jj" component={pepita} />
-
-             
-        
-      
-    
             </Switch>
         </BrowserRouter>
 
