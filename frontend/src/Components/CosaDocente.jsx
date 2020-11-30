@@ -9,9 +9,9 @@ class CosaDocente extends React.Component {
     super(props);
     this.state = {
       datos: []
-   
+
+    }
   }
-}
 
   componentDidMount() {
     axios.get(`http://localhost:4001/api/estudiantes`)
@@ -29,28 +29,28 @@ class CosaDocente extends React.Component {
   render() {
     console.log(this.state.datos);
     const characters = this.state.datos;
-    
+
     return (
 
-      <div className="text-center"> 
-      <div className="cuerpo bg-white col-md-8 order-md-1 container my-5">
-        <h2 className="mb-3 text-center">Alumnos  registrados</h2>
-        <form className="needs-validation" novalidate="">
-          <div className="row">
-            <div className="col-md-6 mb-3 text-center">
-              <br />
+      <div className="text-center">
+        <div className="cuerpo bg-white col-md-8 order-md-1 container my-5">
+          <h2 className="mb-3 text-center">Alumnos  registrados</h2>
+          <form className="needs-validation" novalidate="">
+            <div className="row">
+              <div className="col-md-6 mb-3 text-center">
+                <br />
 
-              <table className="tablita table" width="300px" border="1" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td className="un"> Id </td>
-                  <td className="un"> Nombre </td>
-                  <td className="un"> Apellido </td>
-                  <td className="un"> Colegio </td>
-                  <td className="un"> Grado </td>
-                  <td className="un"> resultado </td>
-                  <td className="un"> correo </td>
-                </tr>
-                {characters.map((estudiantes) => {
+                <table className="tablita table" width="300px" border="1" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td className="un"> Id </td>
+                    <td className="un"> Nombre </td>
+                    <td className="un"> Apellido </td>
+                    <td className="un"> Colegio </td>
+                    <td className="un"> Grado </td>
+                    <td className="un"> resultado </td>
+                    <td className="un"> correo </td>
+                  </tr>
+                  {characters.map((estudiantes) => {
                     return (
                       <tr>
                         <td className="un"> {estudiantes.id} </td>
@@ -63,18 +63,18 @@ class CosaDocente extends React.Component {
                       </tr>
                     )
                   })
-                }
+                  }
 
 
-              </table>
+                </table>
 
 
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
 
+        </div>
       </div>
-    </div>
     );
   }
 }

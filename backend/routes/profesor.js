@@ -13,13 +13,13 @@ router.get('/', (req, res)=>{
     });
 });
 
-router.post('/nuevo-profesor', (req, res)=>{
-    const { nombre, apellido, contraseña, colegio } = req.body;
+router.post('/profesor', (req, res)=>{
+    const { nombre, apellido, contraseña, colegio,correo } = req.body;
   
-    let alumno = [nombre, apellido, contraseña, colegio ];
+    let alumno = [nombre, apellido, contraseña, colegio,correo ];
   
-    let nuevoAlumno = `INSERT INTO profesor( nombre, apellido, contraseña, colegio  ) 
-    VALUES( ?,?,?,?)`;
+    let nuevoAlumno = `INSERT INTO profesor( nombre, apellido, contraseña, colegio,correo  ) 
+    VALUES( ?,?,?,?,?)`;
     
     mysqlConnection.query(nuevoAlumno, alumno, (err, results, fields)=>{
         if(err){

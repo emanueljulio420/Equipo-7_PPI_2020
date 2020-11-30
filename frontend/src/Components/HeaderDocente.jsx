@@ -1,13 +1,39 @@
 import React from 'react';
 import el from '../Img/el.png';
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
-function HeaderDocente() {
+class HeaderDocente extends React.Component {
 
-    return (
+    constructor(props) {
+        super(props);
+        this.state = {
+            datos: []
+
+        }
+    }
+
+    componentDidMount() {
+        axios.get(`http://localhost:4001/api/estudiantes`)
+            .then(res => {
+                console.log(res.data)
+                this.setState({
+                    datos: res.data
+                })
+            }).catch(err => {
+                console.log(err.message)
+            })
+    }
+
+
+    render() {
+        console.log(this.state.datos);
+        const characters = this.state.datos;
+
+        return (
 
         <nav className="navbar navbar-expand-lg navbar-light bg-light text-black">
             <img src={el} alt="" srcset="" width="68" height="68" />
@@ -22,7 +48,7 @@ function HeaderDocente() {
                     </li>
                     <li>
                         <a className="nav-link dropdown-toggle navbar-brand text-black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <FontAwesomeIcon icon={faUserCircle} size="lg" className=""/> Nombre de usuario</a>
+                            <FontAwesomeIcon icon={faUserCircle} size="lg" className=""/> Jorge Julio</a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <Link to="/" className="dropdown-item navbar-brand text-black" href="#">Cerrar sesion</Link>
                         </div>
@@ -35,6 +61,7 @@ function HeaderDocente() {
 
 
     );
+}
 }
 
 export default HeaderDocente;
