@@ -32,17 +32,5 @@ router.post('/profesor', (req, res)=>{
   });
 
 
-  router.put('/profesor/:id', (req, res)=>{
-    const { nombre, apellido, contraseña, colegio } = req.body;
-    const { id } = req.params;
-    mysqlConnection.query(`UPDATE actores SET nombre =? , apellido =? , contraseña =? , colegio =?  WHERE id = ?`,
-     [nombre, apellido, contraseña, colegio , id ], (err, rows, fields)=>{
-        if(!err) {
-            res.json({status: 'Se han actualizado datos del profesor'});
-        }else {
-            console.log(err);
-        }
-    });
-})
 
 module.exports = router;
