@@ -2,6 +2,7 @@ import React from 'react';
 import el from '../Img/el.png';
 import HeaderEstudiante from './HeaderEstudiante';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class Ingresar extends React.Component {
 
@@ -43,7 +44,9 @@ class Ingresar extends React.Component {
                     <br/>
                     <input type="password" id="inputPassword" className="form-control" placeholder="Contraseña" required=""></input>
                     <br/>
+                    <Link to="holad">
                     <button className="btn btn-outline-danger btn-lg btn-block" type="submit">Sign in</button>
+                    </Link>
                     <br/>
                 </form>
             </div>
